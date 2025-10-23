@@ -5,7 +5,7 @@
 **Difficulty:** Easy to Medium  
 **Author:** Bhargav Raj Dutta  
 **Date Created:** October 21, 2025  
-**Flag:** `Exploit3rs{cheese_vault_sql_inject_2025}`
+**Flag:** `Exploit3rs{run the code and find yourself}`
 
 ---
 
