@@ -5,7 +5,7 @@
 **Challenge:** Jerry's Cheese Vault  
 **Difficulty:** Easy to Medium  
 **Category:** Web Security - SQL Injection  
-**Flag:** `Exploit3rs{cheese_vault_sql_inject_2025}`
+**Flag:** `Exploit3rs{find and let me know}`
 
 ---
 
