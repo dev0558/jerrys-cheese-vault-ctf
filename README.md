@@ -1,6 +1,4 @@
-cd ~/ctf-challenges/bhargav-webtask-cheesevault
 
-cat > README.md << 'EOF'
 # Jerry's Cheese Vault - CTF Web Challenge
 
 **Challenge Type:** Web Security - SQL Injection  
