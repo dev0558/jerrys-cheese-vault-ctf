@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+
+# Docker
+*.log
+.env
+
+# Database
+pgdata/
+*.sql.backup
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+cookies.txt
+cookies_sqli.txt
+/tmp/
+*.html.bak
+
+# Secrets (just in case)
+.env.local
+secrets/

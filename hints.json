@@ -1,0 +1,24 @@
+{
+  "challenge": "Jerry's Cheese Vault",
+  "author": "Bhargav Raj Dutta",
+  "hints": [
+    {
+      "level": 1,
+      "difficulty": "low",
+      "cost": 10,
+      "hint": "The login form doesn't properly validate user input before using it in database queries. Have you tried entering special characters like quotes (') in the username field?"
+    },
+    {
+      "level": 2,
+      "difficulty": "medium",
+      "cost": 25,
+      "hint": "SQL injection works by breaking out of the intended query structure. Try using SQL logical operators (OR) and comments (--) to manipulate the authentication check. The admin user exists in the database!"
+    },
+    {
+      "level": 3,
+      "difficulty": "high",
+      "cost": 50,
+      "hint": "Use this payload in the username field: admin' OR '1'='1' -- (with any password). This will bypass the authentication by making the WHERE clause always true and commenting out the password check."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Jerry's Cheese Vault - CTF Challenge License
+
+Copyright (c) 2025 Bhargav Raj Dutta for Exploit3rs
+
+INTERNAL USE LICENSE
+
+This CTF challenge is created for Exploit3rs evaluation purposes.
+
+PERMISSIONS:
+- Use for Exploit3rs CTF competitions and training
+- Modification for educational purposes
+- Distribution to Exploit3rs participants
+
+RESTRICTIONS:
+- No redistribution outside Exploit3rs without permission
+- No commercial use
+- Attribution required
+
+DISCLAIMER:
+This challenge contains intentional security vulnerabilities for 
+educational purposes only. Never use in production environments.
+
+---
+
+Author: Bhargav Raj Dutta
+Date: October 21, 2025

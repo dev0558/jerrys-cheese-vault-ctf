@@ -1,0 +1,38 @@
+services:
+  web:
+    build: .
+    ports:
+      - "${WEB_PORT:-8080}:5000"
+    environment:
+      - DATABASE_URL=postgresql://jerry:cheese@db:5432/cheesevault
+      - SECRET_KEY=dev-secret-key
+      - FLASK_ENV=production
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - cheesenet
+
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=jerry
+      - POSTGRES_PASSWORD=cheese
+      - POSTGRES_DB=cheesevault
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/00-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jerry -d cheesevault"]
+      interval: 2s
+      timeout: 2s
+      retries: 20
+    networks:
+      - cheesenet
+
+volumes:
+  pgdata:
+
+networks:
+  cheesenet:
