@@ -230,10 +230,10 @@ Scroll to "Admin Notes" section and find:
 Title: Master Key Location
 Content: The master key to Jerry's cage is hidden behind the 
          portrait in the living room. 
-         Flag: Exploit3rs{cheese_vault_sql_inject_2025}
+         Flag: Exploit3rs{cheese25_sampleflag}
 ```
 
-**Flag Found:** `Exploit3rs{cheese_vault_sql_inject_2025}`
+**Flag Found:** `Exploit3rs{cheese_vsampleflag}`
 
 ---
 
@@ -267,7 +267,7 @@ python3 solve.py http://localhost:8080
 [*] POST /login => 200
 [*] GET /vault => 200
 
-[+] FLAG FOUND: Exploit3rs{cheese_vault_sql_inject_2025}
+[+] FLAG FOUND: Exploit3rs{fake flag can be found after running the server}
 ```
 
 ---
@@ -287,7 +287,7 @@ curl -b cookies.txt http://localhost:8080/vault | grep -o "Exploit3rs{[^}]*}"
 
 **Output:**
 ```
-Exploit3rs{cheese_vault_sql_inject_2025}
+Exploit3rs{this is not a real flag 1st find and let me know what you got}
 ```
 
 ---
@@ -371,7 +371,7 @@ SELECT * FROM admin_notes WHERE title = 'Master Key Location';
 
 ### Flag Format
 ```
-Exploit3rs{cheese_vault_sql_inject_2025}
+Exploit3rs{Find yourself and let me know}
 ```
 
 **Components:**
